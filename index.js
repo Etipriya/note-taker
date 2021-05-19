@@ -1,7 +1,7 @@
 //Dependencies
 const express = require("express");
 const path = require("path");
-const fs =require("fs");
+const fs = require("fs");
 
 // Set the express app
 const app = express();
@@ -12,9 +12,14 @@ const handleRequest = (req, res) => {
 };
 
 //Declaring the route that sends the user to index.html page
-app.get("/",function(req, res));{
-  res.send(path.join(__dirname, "public/index.html"))
-}
+app.get("/", function (req, res) {
+  res.send(path.join(__dirname, "public/index.html"));
+});
+
+//Declaring the route that sends the user to notes page
+app.get("/notes", (req, res) => {
+  res.send(path.join(__dirname, "public/notes.html"));
+});
 
 app.get("/", (req, res) => {
   res.send("Start working with Note taker");

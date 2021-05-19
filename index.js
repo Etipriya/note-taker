@@ -25,6 +25,16 @@ app.get("/", (req, res) => {
   res.send("Start working with Note taker");
 });
 
+//Create new note with message to db.json file
+app.post("/api/notes", function (req, res) {
+  fs.readFile(
+    path.join("db.json", function (error, response) {
+      if (error) {
+        console.log(error);
+      }
+    })
+  );
+});
 //Listener
 app.listen(PORT, () => {
   console.log(`App listening on port: ${PORT}`);

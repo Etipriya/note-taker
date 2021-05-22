@@ -48,6 +48,7 @@ app.post("/api/notes", function (req, res) {
       title: noteRequest.title,
       text: noteRequest.text,
     };
+    //Pushing newNote and writing the file using path.join
     notes.push(newNote);
     res.json(newNote);
     fs.writeFile(

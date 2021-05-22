@@ -1,6 +1,7 @@
 [
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
+  {
+    "id": 1,
+    "title": "Lunch",
+    "text": "Lunch with friends at 1 p.m"
+  }
 ]

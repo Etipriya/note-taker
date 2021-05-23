@@ -32,10 +32,10 @@ Note taker is an application that uses an express backend to save, retrieve and 
 
 ![image](./images/deleted-notes-page.png)
 
-- The actual JSON file can be seen by clicking on the db folder and then on the db.json file.
-
-![image](./images/deleted-notes-page.png)
-
 # Link to github page
 
 https://github.com/Etipriya/note-taker
+
+# Link to the deployed application
+
+https://enigmatic-retreat-44951.herokuapp.com/
